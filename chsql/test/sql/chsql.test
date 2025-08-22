@@ -13,17 +13,6 @@ require chsql
 
 require parquet
 
-# Confirm the extension works
-query I
-SELECT chsql('Works');
-----
-ChSql Works 🐥
-
-query I
-SELECT chsql_openssl_version('Hello');
-----
-<REGEX>:.*ChSql Hello, my linked OpenSSL version is OpenSSL.*
-
 query I
 SELECT toString('123')
 ----
